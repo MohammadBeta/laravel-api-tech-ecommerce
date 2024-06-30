@@ -16,9 +16,7 @@ class CategoryController extends Controller
         $cateogries = (Category::all());
         if ($cateogries) {
             return $this->apiResponse(CategoryResource::collection($cateogries), 200, 'OK');
-
         }
         return $this->apiResponse(null, 404, 'Empty Categories');
-
     }
 }
