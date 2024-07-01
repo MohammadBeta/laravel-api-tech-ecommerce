@@ -18,6 +18,11 @@ class ProductResource extends JsonResource
             'uuid' => $this->uuid,
             'name' => $this->name,
             'image' => $this->image,
+            'price' => (double) $this->price,
+            'rate' => $this->rate,
+            'offerPrice' => $this->offerPrice,
+            'hasOffer' => $this->hasOffer,
+            'offerDiscount' => $this->offerDiscount,
             'category_uuid' => $this->category_uuid,
         ];
     }
